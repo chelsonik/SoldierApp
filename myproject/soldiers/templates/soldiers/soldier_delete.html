@@ -1,0 +1,10 @@
+
+{% block content %}
+
+<form action='.' method='POST'>{% csrf_token %}
+    <h1>Chcesz usunac zolnierza "{{object.surname}}" ?</h1>
+    <p><input type='submit' value='TAK' /></p>
+</form>
+<a href='../'><button>NIE</button></a>
+
+{% endblock %}

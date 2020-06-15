@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<b>ID:</b> {{ object.id }} <br>
+<b>Imie: </b>{{ object.name }} <br>
+<b>Nazwisko: </b>{{ object.surname }} <br>
+<b>Pluton: </b>{{ object.platoon }}<br>
+<b>Powod:</b>{{ object.reason }}<br>
+<a href='/soldiers/{{ object.id }}/delete/'><button>Usun</button></a><br>
+{% endblock %}

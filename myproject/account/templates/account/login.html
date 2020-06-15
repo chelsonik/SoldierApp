@@ -1,0 +1,18 @@
+{% block content %}
+
+<body>
+<h1>Witaj w aplikacji!</h1>
+    <div class="login-form">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }} <br>
+        <input type="submit"  value="Zaloguj"/>
+    </form>
+        <a href="account/register"><button>Zarejestruj sie</button></a><br>
+        <a href="admin"><button>Admin</button></a><br>
+    </div>
+</body>
+{% endblock %}
+
+
+

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>IRB</h2>
+<b>Nr_ksiazeczki | imie_nazwisko | obecny | data_wyjazdu | data_powrotu | miejsce_pobytu</b>
+{% for instance in irb_list %}
+<p>{{ instance.nr_ksiazeczki }} |
+    {{ instance.imie_nazwisko }} |
+    {{ instance.obecny }} |
+    {{ instance.data_wyjazdu }} |
+    {{ instance.data_powrotu }} |
+    {{ instance.miejsce_pobytu }}</a></p>
+{% endfor %}
+
+{% endblock %}
